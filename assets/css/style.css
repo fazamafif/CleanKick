@@ -1,0 +1,120 @@
+/* =====================================================
+   style.css - CleanKick Studio Custom Styles
+   Bootstrap 5.3 + Custom UMKM Styling
+   ===================================================== */
+
+/* ---------- WARNA TEMA ---------- */
+:root {
+    --warna-utama: #1a365d;    /* Deep Navy Studio Clean */
+    --warna-kedua: #0284c7;    /* Electric Clean Blue */
+    --warna-aksen: #f59e0b;    /* Warm Amber (senada logo) */
+    --warna-bg-soft: #f8fafc;
+}
+
+/* ---------- HERO / BANNER (beranda) ---------- */
+.hero {
+    min-height: 65vh;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.70), rgba(15, 23, 42, 0.80)),
+        url("../img/banner/banner-cleankick.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------- FOTO PRODUK ---------- */
+/* Rasio 1:1 persegi rapi untuk kartu katalog dan detail */
+.foto-produk {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* ---------- UTILITY TEMA ---------- */
+.bg-tema {
+    background-color: var(--warna-utama) !important;
+}
+
+.text-tema {
+    color: var(--warna-utama) !important;
+}
+
+.btn-tema {
+    background-color: var(--warna-utama);
+    border-color: var(--warna-utama);
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-tema:hover,
+.btn-tema:focus {
+    background-color: var(--warna-kedua);
+    border-color: var(--warna-kedua);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+.btn-outline-tema {
+    color: var(--warna-utama);
+    border-color: var(--warna-utama);
+}
+
+.btn-outline-tema:hover {
+    background-color: var(--warna-utama);
+    color: #ffffff;
+}
+
+/* Card hover animation */
+.card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ---------- TOMBOL WHATSAPP MELAYANG ---------- */
+.tombol-wa {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    z-index: 1050;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.tombol-wa:hover {
+    background-color: #20ba5a;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+}
+
+/* ---------- FILTER KATEGORI (Tantangan 3) ---------- */
+.nav-pills .nav-link {
+    color: var(--warna-utama);
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 8px 18px;
+    transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: var(--warna-utama);
+    color: #ffffff;
+}
+
+.kategori {
+    scroll-margin-top: 90px;
+}
